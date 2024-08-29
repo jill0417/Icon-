@@ -1,9 +1,41 @@
 <!doctype html>
 <head>
-    <title> b l a n k </title>
+    <title> index practice 1 </title>
+    <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:20px;
+        }
+    </style>
 </head>
 
 <body>
-   <canvas id="cnv_element"></canvas>
-   <script src="script.js"></script>
+    <div class="row">
+        <div class="image-container"><img id="f1" src="family1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="s1" src="siblings1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="c1" src="comfort1.png" height="200" width="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="dr1" src="decor1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="dy1" src="diary1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="l1" src="lazy1.png" height="200" width="200"/></div>
+        </div>
+
+    <div class="row">
+        <div class="image-container"><img id="r1" src="routine1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="hm1" src="homemade1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="hs1" src="homesick1.png" height="200" width="200"/></div>
+    </div>
 </body>
+
+<script>
+    const f1 = document.getElementById ('f1')
+    const f1_audio = new Audio ('coin.wav')
+    f1.onpointerdown = () => f1_audio.play ()
+</script>
