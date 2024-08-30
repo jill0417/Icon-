@@ -15,22 +15,77 @@
 </head>
 
 <body>
+    
     <div class="row">
-        <div class="image-container"><img id="f1" src="family1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="s1" src="siblings1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="c1" src="comfort1.png" height="200" width="200"/></div>
+        <div class="image-container">
+            <img id="f1" src="img/family1.png" height="200" width="200"
+                onmouseover= "this.src='img/family2.png';"
+                onmouseout= "this.src='img/family1.png';"
+            />
+        </div>
+    
+        <div class="image-container">
+            <img id="s1" src="img/siblings1.png" height="200" width="200"
+                onmouseover= "this.src='img/siblings2.png';"
+                onmouseout= "this.src='img/siblings1.png';"
+            />
+        </div>
+
+        <div class="image-container">
+            <img id="c1" src="img/comfort1.png" height="200" width="200"
+                onmouseover= "this.src='img/comfort2.png';"
+                onmouseout= "this.src='img/comfort1.png';"
+            />
+        </div>
+        
     </div>
 
     <div class="row">
-        <div class="image-container"><img id="dr1" src="decor1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="dy1" src="diary1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="l1" src="lazy1.png" height="200" width="200"/></div>
+        <div class="image-container">
+            <img id="dr1" src="img/decor1.png" height="200" width="200"
+                onmouseover= "this.src='img/decor2.png';"
+                onmouseout= "this.src='img/decor1.png';"
+            />
         </div>
 
+        <div class="image-container">
+            <img id="dy1" src="img/diary1.png" height="200" width="200"
+                onmouseover= "this.src='img/diary2.png';"
+                onmouseout= "this.src='img/diary1.png';"
+            />
+        </div>
+        
+        <div class="image-container">
+            <img id="l1" src="img/lazy1.png" height="200" width="200"
+                onmouseover= "this.src='img/lazy2.png';"
+                onmouseout= "this.src='img/lazy1.png';"
+            />
+        </div>
+    
+    </div>
+
     <div class="row">
-        <div class="image-container"><img id="r1" src="routine1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="hm1" src="homemade1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="hs1" src="homesick1.png" height="200" width="200"/></div>
+        
+        <div class="image-container">
+            <img id="r1" src="img/routine1.png" height="200" width="200"
+                onmouseover= "this.src='img/routine2.png';"
+                onmouseout= "this.src='img/routine1.png';"
+            />
+        </div>
+        
+        <div class="image-container">
+            <img id="hm1" src="img/homemade1.png" height="200" width="200"
+                onmouseover= "this.src='img/homemade2.png';"
+                onmouseout= "this.src='img/homemade1.png';"
+            />
+        </div>
+        
+        <div class="image-container">
+            <img id="hs1" src="img/homesick1.png" height="200" width="200"
+                onmouseover= "this.src='img/homesick2.png';"
+                onmouseout= "this.src='img/homesick1.png';"
+            />
+        </div>
     </div>
 </body>
 
@@ -38,4 +93,36 @@
     const f1 = document.getElementById ('f1')
     const f1_audio = new Audio ('coin.wav')
     f1.onpointerdown = () => f1_audio.play ()
+
+    const s1 = document.getElementById ('s1')
+    const s1_audio = new Audio ('BodyPunch.wav')
+    s1.onpointerdown = () => s1_audio.play ()
+
+    const c1 = document.getElementById ('c1')
+    const c1_audio = new Audio ('Fire.wav')
+    c1.onpointerdown = () => c1_audio.play ()
+
+    const dr1 = document.getElementById ('dr1')
+    const dr1_audio = new Audio ('MagicChime.wav')
+    dr1.onpointerdown = () => dr1_audio.play ()
+
+    const dy1 = document.getElementById ('dy1')
+    const dy1_audio = new Audio ('lock.wav')
+    dy1.onpointerdown = () => dy1_audio.play ()
+
+    const l1 = document.getElementById ('l1')
+    const l1_audio = new Audio ('wakingup.wav')
+    l1.onpointerdown = () => l1_audio.play ()
+
+    const r1 = document.getElementById ('r1')
+    const r1_audio = new Audio ('clock-ticking.wav')
+    r1.onpointerdown = () => r1_audio.play ()
+
+    const hm1 = document.getElementById ('hm1')
+    const hm1_audio = new Audio ('cooking.wav')
+    hm1.onpointerdown = () => hm1_audio.play ()
+
+    const hs1 = document.getElementById ('hs1')
+    const hs1_audio = new Audio ('MaleCrying.wav')
+    hs1.onpointerdown = () => hs1_audio.play ()
 </script>
